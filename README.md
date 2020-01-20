@@ -2,13 +2,13 @@
   <a href="/" rel="noopener">
 </p>
 
-<h3 align="center">DevRadar</h3>
+<h3 align="center">gobarber</h3>
 
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/danilo900/devradar.svg)](https://github.com/danilo900/devradar/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/danilo900/devradar.svg)](https://github.com/danilo900/devradar/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/danilo900/gobarber.svg)](https://github.com/danilo900/gobarber/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/danilo900/gobarber.svg)](https://github.com/danilo900/gobarber/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
