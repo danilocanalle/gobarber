@@ -17,7 +17,7 @@
 
 - [Sobre](#about)
 - [Autores](#authors)
-- [Backend - Node _(developing)_](backend)
+- [Backend - Node (mod moongose) _(developing)_](backend)
 - [Website - ReactJS _(coming)_](web)
 - [Mobile - React Native _(coming)_](mobile)
 
