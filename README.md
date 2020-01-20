@@ -2,7 +2,7 @@
   <a href="/" rel="noopener">
 </p>
 
-<h3 align="center">gobarber</h3>
+<h3 align="center">GoBarber</h3>
 
 <div align="center">
 
