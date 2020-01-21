@@ -30,8 +30,10 @@ O backend em moongose está elaborado até a parte de relações de tabelas, cam
 
 ## ⛏️ Construído usando <a name = "built_using"></a>
 
+- [PostgreSQL](https://www.postgresql.org/) - PostgreSQL
+- [Sequelize](https://sequelize.org/) - Sequelize para o PostgreSQL
 - [MongoDB Cloud](https://www.mongodb.com/cloud) - MongoDB Cloud
-- [Sequelize](https://sequelize.org/) - Sequelize
+- [Mongoose](https://mongoosejs.com/) - Mongoose para o MongoDB
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 - [Express](https://expressjs.com/) - Server Framework
 - [ReactJS](https://reactjs.org/) - Web Framework
