@@ -1,20 +1,44 @@
+/* eslint-disable no-underscore-dangle */
 import moongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 
-const UserSchema = new moongoose.Schema({
-  name: {
-    type: String,
-    trim: true,
+const UserSchema = new moongoose.Schema(
+  {
+    name: {
+      type: String,
+      trim: true,
+    },
+    email: {
+      type: String,
+      trim: true,
+      required: true,
+      index: { unique: true },
+    },
+    password: String,
+    provider: Boolean,
+    avatar_id: {
+      type: moongoose.Schema.Types.ObjectId,
+      ref: 'File',
+    },
   },
-  email: {
-    type: String,
-    trim: true,
-    required: true,
-    index: { unique: true },
-  },
-  password: String,
-  provider: Boolean,
-});
+  {
+    timestamps: true,
+    toJSON: {
+      virtuals: true,
+      versionKey: false,
+      transform(doc, ret) {
+        delete ret._id;
+      },
+    },
+  }
+);
+
+const virtualAvatar = {
+  ref: 'File',
+  localField: 'avatar_id',
+  foreignField: '_id',
+  justOne: true,
+};
 
 async function preSave(next) {
   const user = this;
@@ -30,6 +54,7 @@ async function checkPassword(password) {
   return bcrypt.compare(password, this.password);
 }
 
+UserSchema.virtual('avatar', virtualAvatar);
 UserSchema.pre('save', preSave);
 UserSchema.method('checkPassword', checkPassword);
 
