@@ -1,4 +1,5 @@
 import Sequelize from 'sequelize';
+import mongoose from 'mongoose';
 
 import User from '../app/models/User';
 import File from '../app/models/File';
@@ -11,6 +12,7 @@ const models = [User, File, Appointment];
 class Database {
   constructor() {
     this.init();
+    this.mong();
   }
 
   init() {
@@ -19,6 +21,17 @@ class Database {
     models
       .map(model => model.init(this.connection))
       .map(model => model.associate && model.associate(this.connection.models));
+  }
+
+  mong() {
+    mongoose.connect(
+      'mongodb+srv://gobarber:gobarber@cluster0-7busk.mongodb.net/gobarber?retryWrites=true&w=majority',
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+      }
+    );
   }
 }
 
