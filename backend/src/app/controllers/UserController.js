@@ -25,16 +25,16 @@ class UserController {
       return res.status(400).json({ error: 'Validation fails' });
     }
 
-    const userExists = await User.findOne({ email: req.body.email });
+    const userExists = await User.findOne({ where: { email: req.body.email } });
 
     if (userExists) {
       return res.status(400).json({ error: 'User already exists.' });
     }
 
-    const { _id, name, email, provider } = await User.create(req.body);
+    const { id, name, email, provider } = await User.create(req.body);
 
     return res.json({
-      id: _id,
+      id,
       name,
       email,
       provider,
@@ -60,42 +60,34 @@ class UserController {
       return res.status(400).json({ error: 'Validation fails' });
     }
 
-    const { email, oldPassword, password, name } = req.body;
-
-    const user = await User.findOne({ _id: req.userId });
+    const user = await User.findByPk(req.userId);
 
     if (!user) {
       return res.status(400).json({ error: 'Invalid user id.' });
     }
 
-    if (name && name !== user.name) {
-      user.name = name;
-    }
+    const { oldPassword, password, email } = req.body;
 
     if (email && email !== user.email) {
-      const userExists = await User.findOne({ email });
+      const userExists = await User.findOne({ where: { email } });
 
       if (userExists) {
-        return res.status(400).json({ error: 'Email already exists.' });
+        return res.status(400).json({
+          error: `Email (${email}) already exists.`,
+        });
       }
-
-      user.email = email;
     }
 
     if (oldPassword && password) {
       if (!(await user.checkPassword(oldPassword)))
         return res.status(401).json({ error: 'Password does not match' });
-
-      user.password = password;
     }
 
-    user.save();
-
     // eslint-disable-next-line no-undef
-    const { provider } = user;
+    const { id, name, provider } = await user.update(req.body);
 
     return res.json({
-      id: req.userId,
+      id,
       name,
       email,
       provider,

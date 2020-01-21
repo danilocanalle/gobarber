@@ -1,26 +1,15 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import path from 'path';
 import routes from './routes';
+
+import './database';
 
 class App {
   constructor() {
     this.server = express();
 
-    this.database();
     this.middlewares();
     this.routes();
-  }
-
-  database() {
-    mongoose.connect(
-      'mongodb+srv://gobarber:gobarber@cluster0-7busk.mongodb.net/gobarber?retryWrites=true&w=majority',
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-      }
-    );
   }
 
   middlewares() {
