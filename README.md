@@ -17,13 +17,16 @@
 
 - [Sobre](#about)
 - [Autores](#authors)
-- [Backend - Node (mod moongose) _(developing)_](backend)
+- [Backend - Node (moongose) _(stoped)_](backend-mongoose)
+- [Backend - Node (sequelize) _(doing)_](backend)
 - [Website - ReactJS _(coming)_](web)
 - [Mobile - React Native _(coming)_](mobile)
 
 ## 🧐 Sobre <a name = "about"></a>
 
 Este projeto é desenvolvido junto à GoStack da [@Rocketseat](https://github.com/Rocketseat).
+
+O backend em moongose está elaborado até a parte de relações de tabelas, campos virtuais e o multer recebendo arquivos.
 
 ## ⛏️ Construído usando <a name = "built_using"></a>
 
