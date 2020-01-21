@@ -32,7 +32,6 @@ O backend em moongose está elaborado até a parte de relações de tabelas, cam
 
 - [MongoDB Cloud](https://www.mongodb.com/cloud) - MongoDB Cloud
 - [Sequelize](https://sequelize.org/) - Sequelize
-<br>
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 - [Express](https://expressjs.com/) - Server Framework
 - [ReactJS](https://reactjs.org/) - Web Framework
