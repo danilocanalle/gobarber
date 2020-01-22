@@ -35,6 +35,7 @@ O backend em moongose está elaborado até a parte de relações de tabelas, cam
 - [Mongoose](https://mongoosejs.com/) - Mongoose para o MongoDB (notifications)
 - [Redis](https://redis.io/) - Redis (jobs)
 - [Sentry](https://sentry.io/) - Sentry para monitorar erros
+- [Mailtrap](https://mailtrap.io/) - Mailtrap para enviar emails de teste
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 - [Express](https://expressjs.com/) - Server Framework
 - [ReactJS](https://reactjs.org/) - Web Framework
