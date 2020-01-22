@@ -45,7 +45,7 @@ O backend em moongose está elaborado até a parte de relações de tabelas, cam
 ```
 docker run --name mongobarber -p 27017:27017 -d -t mongo
 ```
--- Criar o container para o Redis
+- Criar o container para o Redis
 ```
 docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 ```
