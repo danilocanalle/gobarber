@@ -17,8 +17,8 @@
 
 - [Sobre](#about)
 - [Autores](#authors)
-- [Backend - Node (moongose) _(stoped)_](backend-mongoose)
-- [Backend - Node (sequelize) _(doing)_](backend)
+- [Backend - Node _(moongose stoped)_](backend-mongoose)
+- [Backend - Node _(done)_](backend)
 - [Website - ReactJS _(coming)_](web)
 - [Mobile - React Native _(coming)_](mobile)
 
