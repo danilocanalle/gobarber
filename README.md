@@ -30,14 +30,25 @@ O backend em moongose está elaborado até a parte de relações de tabelas, cam
 
 ## ⛏️ Construído usando <a name = "built_using"></a>
 
-- [PostgreSQL](https://www.postgresql.org/) - PostgreSQL
+- [PostgreSQL](https://www.postgresql.org/) - PostgreSQL (Users/files/appointments)
 - [Sequelize](https://sequelize.org/) - Sequelize para o PostgreSQL
-- [MongoDB Cloud](https://www.mongodb.com/cloud) - MongoDB Cloud
-- [Mongoose](https://mongoosejs.com/) - Mongoose para o MongoDB
+- [Mongoose](https://mongoosejs.com/) - Mongoose para o MongoDB (notifications)
+- [Redis](https://redis.io/) - Redis (jobs)
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 - [Express](https://expressjs.com/) - Server Framework
 - [ReactJS](https://reactjs.org/) - Web Framework
 - [React Native](https://facebook.github.io/react-native/) - Mobile Framework
+
+## Instalação
+- [Docker](https://www.docker.com/) - Instalar o Docker
+- Criar o container para o MongoDB
+```
+docker run --name mongobarber -p 27017:27017 -d -t mongo
+```
+-- Criar o container para o Redis
+```
+docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+```
 
 ## ✍️ Autores <a name = "authors"></a>
 

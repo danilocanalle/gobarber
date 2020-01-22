@@ -24,14 +24,12 @@ class Database {
   }
 
   mong() {
-    mongoose.connect(
-      'mongodb+srv://gobarber:gobarber@cluster0-7busk.mongodb.net/gobarber?retryWrites=true&w=majority',
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-      }
-    );
+    mongoose.connect('mongodb://localhost:27017/gobarber', {
+      useNewUrlParser: true,
+      useFindAndModify: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+    });
   }
 }
 
