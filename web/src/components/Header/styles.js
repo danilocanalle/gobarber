@@ -23,7 +23,7 @@ export const Content = styled.div`
       padding-right: 20px;
     }
     a {
-      color: red;
+      color: #48a0dc;
       font-weight: bold;
     }
   }
