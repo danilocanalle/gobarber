@@ -19,8 +19,8 @@
 - [Autores](#authors)
 - [Backend - Node _(moongose stoped)_](backend-mongoose)
 - [Backend - Node _(done)_](backend)
-- [Website - ReactJS _(coming)_](web)
-- [Mobile - React Native _(coming)_](mobile)
+- [Website - ReactJS _(done)_](web)
+- [Mobile - React Native _(done)_](mobile)
 
 ## 🧐 Sobre <a name = "about"></a>
 
