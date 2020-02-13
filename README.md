@@ -52,8 +52,10 @@ docker run --name mongobarber -p 27017:27017 -d -t mongo
 ```
 docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 ```
-- Inicializar o backend no pm2
+- Inicializar o backend
 ```
+npm run build
+
 > pm2 start npm --name gobarber-api -- run start
 ```
 ## ✍️ Autores <a name = "authors"></a>
