@@ -41,7 +41,7 @@ function Dashboard({ isFocused }) {
   return (
     <Background>
       <Container>
-        <Title>Agendamentos</Title>
+
 
         <List
           data={appointments}
