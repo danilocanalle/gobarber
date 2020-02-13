@@ -54,7 +54,7 @@ docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 ```
 - Inicializar o backend no pm2
 ```
-> pm2 start npm --name gobarber-api -- run api
+> pm2 start npm --name gobarber-api -- run start
 ```
 ## ✍️ Autores <a name = "authors"></a>
 
