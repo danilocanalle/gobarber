@@ -6,6 +6,7 @@
 
 <div align="center">
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/441eca0c-fba5-4c74-93c0-4eaa953737f0/deploy-status)](https://app.netlify.com/sites/danilo900-gobarber/deploys)
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/danilo900/gobarber.svg)](https://github.com/danilo900/gobarber/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/danilo900/gobarber.svg)](https://github.com/danilo900/gobarber/pulls)
