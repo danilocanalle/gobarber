@@ -51,7 +51,10 @@ docker run --name mongobarber -p 27017:27017 -d -t mongo
 ```
 docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 ```
-
+- Inicializar o backend no pm2
+```
+> pm2 start npm --name bookplay-main-api -- run api
+```
 ## ✍️ Autores <a name = "authors"></a>
 
 - [@danilo900](https://github.com/danilo900) - Developer
